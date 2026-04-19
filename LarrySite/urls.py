@@ -22,4 +22,5 @@ from SiteLarry.views import PortfolioView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", PortfolioView.as_view(), name="home")
+
 ]

@@ -1,0 +1,81 @@
+{% extends base.html %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Leonardo.Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1>Crafting Digital Masterpieces</h1>
+            <p>I am a full-stack Django developer specializing in elegant, timeless, and robust web applications.</p>
+            <a href="#projects" class="btn btn-mona rounded-pill">View My Work</a>
+        </div>
+    </header>
+
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-5" style="color: var(--ml-gold);">Featured Projects</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Sfumato E-Commerce</h5>
+                        <p class="card-text">A scalable online storefront built with Django and PostgreSQL, featuring seamless payment integration.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-mona">See Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Renaissance API</h5>
+                        <p class="card-text">A RESTful API designed with Django Rest Framework for a mobile art gallery application.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-mona">See Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Da Vinci Analytics</h5>
+                        <p class="card-text">A data visualization dashboard utilizing Python, Pandas, and interactive charting libraries.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-mona">See Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {% endblock %}

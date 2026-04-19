@@ -9,4 +9,3 @@ class PortfolioView(TemplateView):
     template_name = "index.html"
 
 
-    render(template_name)

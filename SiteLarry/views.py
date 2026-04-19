@@ -5,5 +5,6 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'templates/index.html')
+class PortfolioView(TemplateView):
+    template_name = 'index.html'
+

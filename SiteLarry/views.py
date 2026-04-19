@@ -9,5 +9,5 @@ class PortfolioView(TemplateView):
     template_name = "templates/index.html"
 
     def get(self, request):
-        return HttpResponse("Hellow, World")
+        return HttpResponse(request, template_name)
 

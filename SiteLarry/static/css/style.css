@@ -1,0 +1,83 @@
+/* static/css/style.css */
+
+:root {
+    --ml-dark: #2C241B;    /* Deep shadow brown */
+    --ml-olive: #4A5335;   /* Background landscape green */
+    --ml-gold: #B58B4C;    /* Sleeve ochre */
+    --ml-skin: #E2C9A6;    /* Warm neutral */
+    --ml-teal: #354A4D;    /* Distant sky/water */
+}
+
+body {
+    background-color: var(--ml-dark);
+    color: var(--ml-skin);
+    font-family: 'Georgia', serif; /* Gives a classic, painterly feel */
+}
+
+/* --- Navbar Styling --- */
+.navbar {
+    background-color: var(--ml-olive) !important;
+    border-bottom: 2px solid var(--ml-gold);
+}
+.navbar-brand {
+    color: var(--ml-gold) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-link {
+    color: var(--ml-skin) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--ml-gold) !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    padding: 120px 0;
+    background: linear-gradient(to bottom, rgba(44, 36, 27, 0.6), var(--ml-dark));
+    text-align: center;
+}
+.hero-section h1 {
+    color: var(--ml-gold);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* --- Buttons --- */
+.btn-mona {
+    background-color: var(--ml-gold);
+    color: var(--ml-dark);
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-mona:hover {
+    background-color: var(--ml-skin);
+    color: var(--ml-dark);
+    transform: translateY(-2px);
+}
+
+/* --- Project Cards --- */
+.card {
+    background-color: var(--ml-teal);
+    border: 1px solid var(--ml-olive);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-body {
+    color: var(--ml-skin);
+}
+.card-title {
+    color: var(--ml-gold);
+}
+.card-footer {
+    background-color: rgba(44, 36, 27, 0.5);
+    border-top: 1px solid var(--ml-olive);
+}

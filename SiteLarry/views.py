@@ -8,6 +8,5 @@ from django.views.generic import TemplateView
 class PortfolioView(TemplateView):
     template_name = "index.html"
 
-    def get(self, request):
-        return HttpResponse("Hello, World")
 
+    return template_name

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.js' %}"defer/>
   </head>
   <body>
-    {% block header %}
     <header class="hero-section">
         <div class="container">
             <h1>Software Engineer/Web Developer/Indie Game Developer</h1>
@@ -19,9 +18,7 @@
             <a href="#projects" class="btn btn-mona rounded-pill">View My Work</a>
         </div>
     </header>
-    {% endblock header %}
 
-    {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">Da'Shawn Larry.Dev</a>
@@ -46,7 +43,6 @@
             </div>
         </div>
     </nav>
-    {% endblock navbar %}
     
     {% block content %}
     {% endblock content %}

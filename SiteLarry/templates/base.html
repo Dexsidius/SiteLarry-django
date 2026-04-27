@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.js' %}"defer/>
   </head>
   <body>
+    {% block header %}
+    <header class="hero-section">
+        <div class="container">
+            <h1>Software Engineer/Web Developer/Indie Game Developer</h1>
+            <p>I see myself as a jack-of-all-trades.  I hold many hats and interests in the world of software and IT.  From Web developing to pen testing I enjoy learning it all. </p>
+            <a href="#projects" class="btn btn-mona rounded-pill">View My Work</a>
+        </div>
+    </header>
+    {% endblock header %}
+
     {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">

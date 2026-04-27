@@ -1,9 +1,7 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 <!DOCTYPE html>
-  {% block navbar %}
-  {% endblock %}
-
+  
     {% block content %}
     <header class="hero-section">
         <div class="container">
@@ -12,6 +10,10 @@
             <a href="#projects" class="btn btn-mona rounded-pill">View My Work</a>
         </div>
     </header>
+    
+    {% block navbar %}
+    {% endblock navbar%}
+  
 
     <section id="projects" class="container py-5">
         <h2 class="text-center mb-5" style="color: var(--ml-gold);">Featured Areas</h2>
@@ -55,4 +57,4 @@
         </div>
     </section>
 
-{% endblock %}
+{% endblock content %}

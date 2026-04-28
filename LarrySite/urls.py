@@ -21,7 +21,7 @@ from SiteLarry.views import PortfolioView, AboutMeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", PortfolioView.as_view(), name="home")
+    path("", PortfolioView.as_view(), name="home"),
     path("/about", AboutMeView.as_view(), name="about")
 
 ]

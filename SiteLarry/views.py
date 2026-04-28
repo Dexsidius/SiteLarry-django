@@ -9,5 +9,5 @@ class PortfolioView(TemplateView):
     template_name = 'index.html'
 
 class AboutMeView(TemplateView):
-    template_name = 'about.html'
+    template_name = 'aboutme.html'
 

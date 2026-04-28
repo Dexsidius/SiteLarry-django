@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About | Da'Shawn Larry{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-8">
+            <h1 style="color: var(--ml-gold); font-size: 3.5rem;">Da'Shawn Larry [cite: 1]</h1>
+            <h4 style="color: var(--ml-olive); letter-spacing: 1px;">Software Architect | Government Contractor [cite: 2]</h4>
+            <p class="lead mt-4" style="color: var(--ml-skin); line-height: 1.8;">
+                I am a results-oriented Software Architect with an Active Secret Clearance and a strong background in Computer Science[cite: 5]. My focus is on leveraging AI-driven Verification and Validation (V&V), Test and Evaluation (T&E) cycles, C++, and MATLAB[cite: 6]. I am dedicated to delivering robust, secure, and scalable software solutions for critical government missions[cite: 6].
+            </p>
+        </div>
+        <div class="col-lg-4 text-center mt-4 mt-lg-0">
+            <div class="shadow-lg" style="width: 250px; height: 250px; background-color: var(--ml-teal); border: 5px solid var(--ml-gold); border-radius: 50%; display: inline-block; overflow: hidden;">
+                <img src="{% static 'images/portrait.jpg' %}" alt="Da'Shawn Larry" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+            </div>
+        </div>
+    </div>
+
+    <hr style="border-top: 2px solid var(--ml-olive); margin: 50px 0;">
+
+    <div class="row">
+        
+        <div class="col-md-7 pe-lg-5">
+            <h2 style="color: var(--ml-gold); border-bottom: 1px solid var(--ml-olive); padding-bottom: 10px; margin-bottom: 30px;">Professional Canvas</h2>
+
+            <div class="mb-5">
+                <h4 style="color: var(--ml-skin);">Software Engineer (Government Contractor) [cite: 13]</h4>
+                <h6 style="color: var(--ml-teal); font-style: italic;">Amentum | Dahlgren, VA | August 2023 - Present [cite: 13]</h6>
+                <ul class="mt-3" style="color: var(--ml-skin); line-height: 1.7;">
+                    <li>Architect and develop custom software tools and secure web applications to support critical government operations and workflows within a cleared environment[cite: 13].</li>
+                    <li>Lead efforts in the verification and validation (V&V) of software functionality using Artificial Intelligence techniques to ensure performance reliability under strict constraints[cite: 14].</li>
+                    <li>Execute comprehensive Test and Evaluation (T&E) procedures, utilizing C++ and MATLAB for data analysis, identifying system bottlenecks, and ensuring compliance with federal security standards[cite: 15].</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <h4 style="color: var(--ml-skin);">Machine Learning & Bioinformatics Researcher [cite: 26]</h4>
+                <h6 style="color: var(--ml-teal); font-style: italic;">Morgan State University | Baltimore, MD | May 2019 - March 2020 [cite: 26]</h6>
+                <ul class="mt-3" style="color: var(--ml-skin); line-height: 1.7;">
+                    <li>Conducted undergraduate research focusing on the intersection of Machine Learning algorithms and Bioinformatics data[cite: 27].</li>
+                    <li>Analyzed large biological datasets to identify patterns and predict outcomes, utilizing statistical modeling and algorithmic processing[cite: 28].</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <h2 style="color: var(--ml-gold); border-bottom: 1px solid var(--ml-olive); padding-bottom: 10px; margin-bottom: 30px;">My Palette</h2>
+            
+            <div class="card mb-4 shadow" style="background-color: var(--ml-teal); border: 1px solid var(--ml-olive);">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: var(--ml-gold);">Core Competencies</h5>
+                    <p class="card-text text-center mt-3" style="color: var(--ml-skin);">
+                        Software Architecture, Test & Evaluation (T&E), AI/ML Validation, Web Application Development, DoD Compliance[cite: 9].
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-5 shadow" style="background-color: var(--ml-teal); border: 1px solid var(--ml-olive);">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: var(--ml-gold);">Languages & Frameworks</h5>
+                    <p class="card-text text-center mt-3" style="color: var(--ml-skin);">
+                        C++, MATLAB, Python, Java, JavaScript, HTML/CSS, SQL[cite: 10].
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="color: var(--ml-gold); border-bottom: 1px solid var(--ml-olive); padding-bottom: 10px; margin-bottom: 20px;">Credentials</h2>
+            <ul style="color: var(--ml-skin); line-height: 1.8; list-style-type: square;">
+                <li><strong>Degree:</strong> Bachelor of Science in Computer Science | Morgan State University, Graduated 2023[cite: 24].</li>
+                <li><strong>Clearance:</strong> Active Secret Clearance[cite: 31].</li>
+                <li><strong>Certifications:</strong> AWS Certified Developer, CompTIA Security+ (In Progress)[cite: 32].</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
